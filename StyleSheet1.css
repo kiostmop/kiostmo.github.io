@@ -1,0 +1,66 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px; /* Добавляем отступы для мобильных устройств */
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Делаем ширину 100% для мобильных устройств */
+    max-width: 400px; /* Максимальная ширина для больших экранов */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Увеличиваем размер заголовка */
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Увеличиваем размер шрифта */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Увеличиваем размер шрифта */
+}
+
+    button:hover {
+        background: #4cae4c;
+    }
+
+#message {
+    margin-top: 20px;
+    color: green;
+}
+
+/* Медиа-запрос для экранов меньше 600px */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Уменьшаем размер заголовка */
+    }
+
+    input, button {
+        font-size: 14px; /* Уменьшаем размер шрифта для полей и кнопки */
+        padding: 8px; /* Уменьшаем отступы */
+    }
+}
